@@ -67,14 +67,14 @@ $config = [
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
 
                 /* Custom requests here */
-
+                'POST api/auth/login' => 'api/auth/login',
                 /**/
 
-                'GET api/v1/<controller:\w+>' => 'api/v1/<controller>/index',
-                'GET api/v1/<controller:\w+>/<id:\d+>' => 'api/v1/<controller>/view',
-                'POST api/v1/<controller:\w+>' => 'api/v1/<controller>/create',
-                'PUT,PATCH api/v1/<controller:\w+>/<id:\d+>' => 'api/v1/<controller>/update',
-                'DELETE api/v1/<controller:\w+>/<id:\d+>' => 'api/v1/<controller>/delete',
+                'GET api/<controller:\w+>' => 'api/<controller>/index',
+                'GET api/<controller:\w+>/<id:\d+>' => 'api/<controller>/view',
+                'POST api/<controller:\w+>' => 'api/<controller>/create',
+                'PUT,PATCH api/<controller:\w+>/<id:\d+>' => 'api/<controller>/update',
+                'DELETE api/<controller:\w+>/<id:\d+>' => 'api/<controller>/delete',
             ]
         ],
     ],

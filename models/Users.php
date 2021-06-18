@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\base\Security;
 
 /**
  * This is the model class for table "users".
@@ -53,6 +54,13 @@ class Users extends \yii\db\ActiveRecord
         if (isset($this->password)) {
             $this->password = Yii::$app->security->generatePasswordHash($this->password);
         }
+
+        if ($insert) {
+            $security = new Security();
+            $randomKey = md5($security->generateRandomKey());
+            $this->access_token = $randomKey;
+        }
+
         return parent::beforeSave($insert);
     }
 

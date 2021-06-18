@@ -24,7 +24,7 @@ class m210618_184048_create_history_table extends Migration
         $this->createIndex('history_patient_id', 'history', 'patient_id');
 
         $this->addForeignKey('fk_history_observation_id', 'history', 'observation_id', 'observations', 'id');
-        $this->addForeignKey('fk_history_patient_id', 'history', 'patient_id', 'users', 'id');
+        $this->addForeignKey('fk_history_patient_id', 'history', 'patient_id', 'users', 'id', 'CASCADE');
     }
 
     /**

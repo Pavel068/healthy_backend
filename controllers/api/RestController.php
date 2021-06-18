@@ -1,9 +1,7 @@
 <?php
 
-namespace app\controllers\api\v1;
+namespace app\controllers\api;
 
-use app\models\Permissions;
-use app\models\Settings;
 use Yii;
 use yii\filters\auth\CompositeAuth;
 use yii\filters\auth\HttpBasicAuth;

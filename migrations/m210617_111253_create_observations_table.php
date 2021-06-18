@@ -26,8 +26,8 @@ class m210617_111253_create_observations_table extends Migration
         $this->createIndex('observations_doctor_id', 'observations', 'doctor_id');
         $this->createIndex('observations_patient_id', 'observations', 'patient_id');
 
-        $this->addForeignKey('fk_observations_doctor_id', 'observations', 'doctor_id', 'users', 'id');
-        $this->addForeignKey('fk_observations_patient_id', 'observations', 'patient_id', 'users', 'id');
+        $this->addForeignKey('fk_observations_doctor_id', 'observations', 'doctor_id', 'users', 'id', 'CASCADE');
+        $this->addForeignKey('fk_observations_patient_id', 'observations', 'patient_id', 'users', 'id', 'CASCADE');
     }
 
     /**
