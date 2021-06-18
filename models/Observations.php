@@ -53,13 +53,13 @@ class Observations extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'doctor_id' => 'Doctor ID',
-            'patient_id' => 'Patient ID',
-            'start_date' => 'Start Date',
-            'end_date' => 'End Date',
-            'result' => 'Result',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
+            'doctor_id' => 'Врач',
+            'patient_id' => 'Пациент',
+            'start_date' => 'Начало наблюдения',
+            'end_date' => 'Конец наблюдения',
+            'result' => 'Результат',
+            'created_at' => 'Добавлено',
+            'updated_at' => 'Обновлено',
         ];
     }
 

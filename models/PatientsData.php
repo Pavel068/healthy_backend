@@ -49,12 +49,12 @@ class PatientsData extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'birthday' => 'Birthday',
-            'height' => 'Height',
-            'weight' => 'Weight',
-            'extra' => 'Extra',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
+            'birthday' => 'Дата рождения',
+            'height' => 'Рост',
+            'weight' => 'Вес',
+            'extra' => 'Дополнительно',
+            'created_at' => 'Добавлено',
+            'updated_at' => 'Обновлено',
         ];
     }
 

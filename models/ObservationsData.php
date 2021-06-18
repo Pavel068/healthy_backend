@@ -47,12 +47,12 @@ class ObservationsData extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'observation_id' => 'Observation ID',
-            'top_pressure' => 'Top Pressure',
-            'bottom_pressure' => 'Bottom Pressure',
-            'pulse' => 'Pulse',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
+            'observation_id' => 'Наблюдение',
+            'top_pressure' => 'Верхнее давление',
+            'bottom_pressure' => 'Нижнее давление',
+            'pulse' => 'Пульс',
+            'created_at' => 'Добавлено',
+            'updated_at' => 'Обновлено',
         ];
     }
 

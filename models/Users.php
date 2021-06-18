@@ -71,14 +71,10 @@ class Users extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'insurance_number' => 'Insurance Number',
-            'password' => 'Password',
-            'full_name' => 'Full Name',
-            'role' => 'Role',
-            'patient_id' => 'Patient ID',
-            'access_token' => 'Access Token',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
+            'insurance_number' => 'СНИЛС',
+            'password' => 'Пароль',
+            'full_name' => 'ФИО',
+            'role' => 'Роль'
         ];
     }
 
