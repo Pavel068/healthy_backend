@@ -53,7 +53,8 @@ AppAsset::register($this);
     $doctorItems = [
         ['label' => 'Мои пациенты', 'url' => ['/users/index']],
         ['label' => 'Данные пациентов', 'url' => ['/patients-data/index']],
-        ['label' => 'Наблюдение', 'url' => ['/observations/index']],
+        ['label' => 'Наблюдения', 'url' => ['/observations/index']],
+        ['label' => 'Данные наблюдений', 'url' => ['/observations-data/index']],
         (
             '<li>'
             . Html::beginForm(['/site/logout'], 'post')

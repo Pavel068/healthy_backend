@@ -28,7 +28,7 @@ class m210617_110645_create_users_table extends Migration
         $this->addForeignKey('fk_users_patient_id', 'users', 'patient_id', 'patients_data', 'id');
 
         $this->insert('users', [
-            'email' => 'admin@test.com',
+            'insurance_number' => '123456789',
             'full_name' => 'Admin Adminov',
             'password' => Yii::$app->security->generatePasswordHash('123456'),
             'role' => 'admin'

@@ -29,9 +29,9 @@ class User extends ActiveRecord implements IdentityInterface
         return null;
     }
 
-    public static function findByUsername($email)
+    public static function findByUsername($insurance_number)
     {
-        return static::findOne(['email' => $email]);
+        return static::findOne(['insurance_number' => $insurance_number]);
     }
 
     public function getId()
