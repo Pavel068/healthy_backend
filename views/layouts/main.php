@@ -55,6 +55,7 @@ AppAsset::register($this);
         ['label' => 'Данные пациентов', 'url' => ['/patients-data/index']],
         ['label' => 'Наблюдения', 'url' => ['/observations/index']],
         ['label' => 'Данные наблюдений', 'url' => ['/observations-data/index']],
+        ['label' => 'Назначения препаратов', 'url' => ['/history/index']],
         (
             '<li>'
             . Html::beginForm(['/site/logout'], 'post')

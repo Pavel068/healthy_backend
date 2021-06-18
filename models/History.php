@@ -12,6 +12,8 @@ use Yii;
  * @property int $patient_id
  * @property string|null $drug
  * @property string|null $drug_meta
+ * @property string $created_at
+ * @property string $updated_at
  *
  * @property Observations $observation
  * @property Users $patient
@@ -34,6 +36,7 @@ class History extends \yii\db\ActiveRecord
         return [
             [['observation_id', 'patient_id'], 'required'],
             [['observation_id', 'patient_id'], 'integer'],
+            [['created_at', 'updated_at'], 'safe'],
             [['drug', 'drug_meta'], 'string', 'max' => 255],
             [['observation_id'], 'exist', 'skipOnError' => true, 'targetClass' => Observations::className(), 'targetAttribute' => ['observation_id' => 'id']],
             [['patient_id'], 'exist', 'skipOnError' => true, 'targetClass' => Users::className(), 'targetAttribute' => ['patient_id' => 'id']],
@@ -47,10 +50,12 @@ class History extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'observation_id' => 'Observation ID',
-            'patient_id' => 'Patient ID',
-            'drug' => 'Drug',
-            'drug_meta' => 'Drug Meta',
+            'observation_id' => 'Наблюдение',
+            'patient_id' => 'Пациент',
+            'drug' => 'Препарат',
+            'drug_meta' => 'Информация о приеме',
+            'created_at' => 'Добавлено',
+            'updated_at' => 'Обновлено',
         ];
     }
 

@@ -18,7 +18,9 @@ class m210618_184048_create_history_table extends Migration
             'patient_id' => $this->integer()->notNull(),
             'drug' => $this->string(255),
             'drug_meta' => $this->string(255),
-        ]);
+            'created_at' => "TIMESTAMP NOT NULL default CURRENT_TIMESTAMP",
+            'updated_at' => "TIMESTAMP NOT NULL default CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+        ], 'CHARACTER SET utf8 COLLATE utf8_general_ci ENGINE=InnoDB');
 
         $this->createIndex('history_observation_id', 'history', 'observation_id');
         $this->createIndex('history_patient_id', 'history', 'patient_id');
