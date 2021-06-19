@@ -5,7 +5,7 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
-    'name' => 'Healthy',
+    'name' => 'Dr.House',
     'language' => 'ru-RU',
     'homeUrl' => ['users/index'],
     'basePath' => dirname(__DIR__),
