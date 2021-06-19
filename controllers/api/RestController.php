@@ -70,7 +70,7 @@ class RestController extends \yii\rest\ActiveController
                 HttpBearerAuth::className(),
                 QueryParamAuth::className(),
             ],
-            'except' => []
+            'except' => ['options']
         ];
 
         return $behaviors;
