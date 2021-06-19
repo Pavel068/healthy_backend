@@ -8,7 +8,7 @@ class ChartsHelper
 {
     private static function getObservationChartsData($observation_id)
     {
-        $data = \app\models\ObservationsData::find()->where(['observation_id' => 1])->all();
+        $data = \app\models\ObservationsData::find()->where(['observation_id' => $observation_id])->all();
         $charts = [
             'top_pressure' => 'Верхнее давление',
             'bottom_pressure' => 'Нижнее давление',

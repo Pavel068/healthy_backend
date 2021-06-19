@@ -54,7 +54,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h2>График</h2>
     <?php
 
-    echo \app\helpers\ChartsHelper::getObservationChart(1);
+    echo \app\helpers\ChartsHelper::getObservationChart($model->id);
 
     ?>
 
